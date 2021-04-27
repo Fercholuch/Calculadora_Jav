@@ -7,33 +7,37 @@ var btn_s = document.getElementById("btn-s")
 function multiplicar (){
     var num1 = document.getElementById("num1").value;
     var num2 = document.getElementById("num2").value;
+    var txt_resultado = document.getElementById("txt-resultado")
     
-    alert(num1*num2)
+    txt_resultado.textContent = num1*num2
 }
 
 function dividir (){
     var num1 = document.getElementById("num1").value;
     var num2 = document.getElementById("num2").value;
+    var txt_resultado = document.getElementById("txt-resultado")
     
-    alert(num1/num2)
+    txt_resultado.textContent = num1/num2
     
 }
 
 function resta (){
     var num1 = document.getElementById("num1").value;
     var num2 = document.getElementById("num2").value;
+    var txt_resultado = document.getElementById("txt-resultado")
     
-    alert(num1-num2)    
+    txt_resultado.textContent = num1-num2
 }
 
 function suma (){
     var num1 = document.getElementById("num1").value;
     var num2 = document.getElementById("num2").value;
+    var txt_resultado = document.getElementById("txt-resultado")
     
-    var suma = parseInt(num1) + parseInt(num2);
+    num1 = parseInt(num1)
+    num2 = parseInt(num2)
     
-    alert(suma)
-    console. log(suma)
+    txt_resultado.textContent = num1+num2
 }
 
 btn_m.addEventListener('click' , multiplicar)
